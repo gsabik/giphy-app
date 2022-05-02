@@ -1,7 +1,7 @@
-import { GridItem, Text, Image, VStack } from "@chakra-ui/react"
 import React from "react"
+import { GridItem, Text, Image, VStack } from "@chakra-ui/react"
 
-const GifGridItem = ({url, title}) => {
+const GifGridItem = ({ url, title }) => {
 
   return (
     <GridItem>

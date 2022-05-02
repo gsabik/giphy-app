@@ -1,5 +1,5 @@
 import React,  {useState } from "react"
-import { Container, Flex, VStack } from "@chakra-ui/react"
+import { Container, Flex } from "@chakra-ui/react"
 import AddCategory from "./AddCategory";
 import GifGrid from "./GifGrid";
 
