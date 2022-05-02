@@ -17,14 +17,14 @@ const AddCategory = ({ setCategories }) => {
       e.preventDefault();
       setCategories(cats => [...cats, inputValue]);
       
-      //Despues de añadir una categoria, seteo mi input con un string vacio
+      // Despues de añadir una categoria, seteo mi input con un string vacio
       setInputValue("");
     }
 
   }
   
   return (
-      <HStack w="full" justifyContent="center">
+      <HStack w="full" justifyContent="center" pb={10}>
         <form onSubmit={handleSubmit}>
           <HStack>
             <FormControl>
