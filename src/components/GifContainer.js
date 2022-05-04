@@ -20,8 +20,13 @@ const GifGrid = ({ category} ) => {
 
     return (
         <VStack w="full" spacing={6}>
-            <Heading>Results of: {category}</Heading>
-            <Flex w="full" flexDirection="row" flexWrap="wrap" justifyContent="center">
+            <Heading fontSize="3xl">Results of: {category}</Heading>
+            <Flex
+                flexDirection="row" 
+                flexWrap="wrap" 
+                justifyContent="center"
+                w="full" 
+            >
                 {
                     loading
                     ?

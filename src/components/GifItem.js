@@ -1,9 +1,23 @@
-import { VStack, Image } from "@chakra-ui/react"
+import { VStack, Image, Text } from "@chakra-ui/react"
 
-const GifItem = ({ url }) => {
+const GifItem = ({ url, title }) => {
     return (
-        <VStack spacing={6} p={4} alignItems="center">
-            <Image src={url}/>
+        <VStack
+            alignContent="center"
+            m={2}
+            overflow="hidden"
+            p={4}
+            spacing={6} 
+        >
+            <Image
+                src={url} 
+                maxH="15rem"
+            />
+            <Text
+                fontSize="lg" 
+                fontWeight="500"
+            >{title}
+            </Text>
         </VStack>
     )
 }
