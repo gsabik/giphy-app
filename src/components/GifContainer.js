@@ -13,9 +13,10 @@ const GifGrid = ({ category} ) => {
 
         searchGifs(category)
         .then(setGifs)
+        .catch(err => console.log(err))
         .finally( () => {
             setLoading(false)
-        })
+        });
     }, [category]);
 
     return (

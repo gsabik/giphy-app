@@ -24,17 +24,21 @@ const SearchInput = ({ setCategories }) => {
     }
 
     return (
-        <HStack w="full" justifyContent="center" pb={10}>
+        <HStack 
+            justifyContent="center" 
+            pb={10}
+            w="full" 
+        >
             <form onSubmit={handleSubmit}>
                 <HStack>
                     <FormControl>
                     <Input
                         isRequired
-                        w="full"
+                        onChange={handleInputChange}
                         placeholder="Search"
                         type="text"
                         value={inputValue}
-                        onChange={handleInputChange}
+                        w="full"
                     />
                     </FormControl>
                     <Button type="submit">
