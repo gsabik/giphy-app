@@ -3,13 +3,11 @@ const searchGifs = async ( category ) => {
     const res = await fetch (url);
     const { data } = await res.json();
 
-    console.log(data)
-
     // Con el data.map obtengo solo la información que quiero o preciso, en vez de toda la información predeterminada que viene en "data"
     const gifData = data.map(gif => {
         return {
             id: gif.id,
-            title: gif.title,
+            title: gif.title.toUpperCase(),
             url: gif.images.downsized_medium.url
         }
     })
