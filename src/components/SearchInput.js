@@ -17,14 +17,13 @@ const SearchInput = ({ setCategories }) => {
 
     const handleSubmit = (e) => {
         if (inputValue === "" || inputValue.trim() >= 0) {
-            alert("Debe escribir una categoria");
+            alert("Search a gif!");
         }
     
         else {
             e.preventDefault();
             setCategories([inputValue]);
           
-            // Despues de añadir una categoria, seteo mi input con un string vacio
             setInputValue("");
         }
     }

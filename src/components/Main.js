@@ -18,7 +18,7 @@ const Main = () => {
                 setCategories={setCategories}
             />
             <Center h="70vh">
-                <Heading>Search gif!</Heading>
+                <Heading>Search a gif!</Heading>
             </Center>            
         </Container>
         )
