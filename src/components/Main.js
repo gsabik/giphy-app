@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { Container, Flex, Center, Heading } from "@chakra-ui/react";
+import { 
+    Container,
+    Flex, 
+    Center, 
+    Heading 
+} from "@chakra-ui/react";
 import SearchInput from "./SearchInput";
 import GifContainer from "./GifContainer";
 

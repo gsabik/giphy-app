@@ -1,5 +1,9 @@
-import { VStack, Image, Text, Button, Icon, HStack } from "@chakra-ui/react"
-import { StarIcon } from "@chakra-ui/icons"
+import { 
+    VStack,
+    Image, 
+    Text, 
+    HStack 
+} from "@chakra-ui/react"
 
 const GifItem = ({ url, title }) => {
     return (
@@ -20,9 +24,6 @@ const GifItem = ({ url, title }) => {
                     fontWeight="500"
                 >{title}
                 </Text>
-                <Button size="sm">
-                    <Icon as={StarIcon}/>
-                </Button>
             </HStack>
         </VStack>
     )

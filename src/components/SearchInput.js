@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { HStack, Button, FormControl, Input, Icon } from "@chakra-ui/react";
+import { 
+    HStack,
+    Button,
+    FormControl, 
+    Input,
+    Icon 
+} from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
 const SearchInput = ({ setCategories }) => {
@@ -48,7 +54,6 @@ const SearchInput = ({ setCategories }) => {
             </form>
         </HStack>
     )
-
 }
 
 export default SearchInput

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Flex, Heading, VStack } from "@chakra-ui/react";
+import { 
+    Flex, 
+    Heading, 
+    VStack 
+} from "@chakra-ui/react";
 import searchGifs from "../helpers/searchGifs";
 import Loader from "./Loader";
 import GifItem from "./GifItem";

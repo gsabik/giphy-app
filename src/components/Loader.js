@@ -1,4 +1,7 @@
-import { Center, Spinner } from "@chakra-ui/react"
+import { 
+    Center, 
+    Spinner 
+} from "@chakra-ui/react"
 
 const Loader =  () => {
     return (
